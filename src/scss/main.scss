@@ -18,12 +18,35 @@ video {
 
 body {
   font-family: "Geologica";
+  margin-top: 10px;
 }
 
-.col-6 {
-  background-color: yellow;
+.container + .container {
+  margin-top: 16px;
 }
 
 .col-2 {
+  background-color: pink;
+}
+.col-7 {
+  background-color: pink;
+}
+
+.col-12 {
+  background-color: pink;
+}
+.col-10 {
+  background-color: pink;
+}
+
+.col-3 {
+  background-color: pink;
+}
+
+.col-4 {
+  background-color: pink;
+}
+
+.card {
   background-color: aqua;
 }
