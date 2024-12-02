@@ -12,3 +12,18 @@ img,
 video {
   display: block;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
+@import "bootstrap/scss/bootstrap-grid";
+
+body {
+  font-family: "Geologica";
+}
+
+.col-6 {
+  background-color: yellow;
+}
+
+.col-2 {
+  background-color: aqua;
+}
