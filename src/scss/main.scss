@@ -11,6 +11,7 @@ a {
 img,
 video {
   display: block;
+  max-width: 100%;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
@@ -56,14 +57,12 @@ body {
 }
 
 .header {
-  width: 1116px;
   height: 171px;
   flex-shrink: 0;
 }
 
 .Navigation {
   display: flex;
-  width: 736px;
   flex-direction: column;
   align-items: center;
   gap: 23px;
@@ -131,7 +130,6 @@ body {
 
 .icones {
   display: flex;
-  width: 180px;
   flex-direction: column;
   align-items: flex-end;
   gap: 28px;
@@ -151,4 +149,79 @@ body {
   align-items: center;
   gap: 8.916px;
   align-self: stretch;
+}
+
+.ornament {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.2;
+}
+
+.ligne-ornament {
+  stroke-width: 5px;
+  stroke: 5px solid#816752;
+}
+
+.feuille-gauche {
+  height: 15.274px;
+}
+
+.feuille-droite {
+  height: 15.274px;
+  transform: rotate(180deg);
+}
+
+.accroche {
+  color: #f2f2f2;
+  font-size: 24px;
+  font-weight: 200;
+  letter-spacing: 1.68px;
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: 522px;
+  margin-bottom: 79px;
+  width: 1004px;
+}
+
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenu-cave-vin {
+  display: flex;
+  width: 736px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.texte-cave-vin {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--Gris-medium, #787878);
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.bouton {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: var(--gold, linear-gradient(90deg, #f9e5c7 0%, #f6d395 100%));
+  color: var(--Brun, #816752);
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.visite-marbre {
+  background-image: url(/src/images/fond\ marbre\ visite.png);
 }

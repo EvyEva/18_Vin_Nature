@@ -1,53 +1,20 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="scss/main.scss" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <div class="row">
-          <div class="col-2">
-            <img src="images/logo header.png" alt="logo" />
-          </div>
-          <div class="col-8">
-            <div class="Navigation">
-              <div class="Navigation-haut">
-                <p class="haut">Vente en ligne</p>
-                <p class="haut">Visites/événements</p>
-                <p class="haut">Contact</p>
-              </div>
-              <div class="Navigation-bas">
-                <p class="bas-choisi">Le domaine</p>
-                <p class="bas">Philosophie</p>
-                <p class="bas">Nos vins</p>
-                <p class="bas">Actualité</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="icones">
-              <div class="logos-reseaux">
-                <img src="images/logo facebook.png" alt="logo facebook" />
-                <img src="images/logo insta.png" alt="logo instagram" />
-              </div>
-              <div class="logos-icones">
-                <img src="images/langues.png" alt="langues" />
-                <img src="images/profile.png" alt="Profile icone" />
-                <img src="images/shopping.png" alt="Shopping Icone" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+<extends src="base-layout.html">
+  <block name="content">
     <div class="container">
       <div class="row">
-        <div class="col-12">banniere</div>
+        <div class="col-12">
+          <div class="introduction">
+            <p class="accroche">
+              Découvrez notre vaste gamme de vin naturel authentiques et
+              vivants, créés avec passion et respect du terroir.
+            </p>
+            <img
+              src="images/banniere1.png"
+              alt="Banniere"
+              class="banniereimg"
+            />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -76,81 +43,24 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-10 offset-1">card visite premier</div>
-        <div class="col-7 offset-1">card visite deuxième</div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-12">ornament</div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-2">footer premier</div>
-        <div class="col-2 offset-3">footer deuxième</div>
-        <div class="col-2 offset-1">footer troisieme</div>
-        <div class="row">
-          <div class="col-4">footer quatrième</div>
-          <div class="col-3 offset-5">footer cinque</div>
+        <div class="visite-marbre">
+          <div class="col-10 offset-1">
+            <img src="images/cave a vin .png" alt="Cave a vin" />
+          </div>
+          <div class="col-7 offset-1">
+            <div class="contenu-cave-vin">
+              <div class="texte-cave-vin">
+                Organisez une visite de cave ou une dégustation, en entreprise,
+                en association, ou en individuel : tout le monde est le bienvenu
+                !
+              </div>
+              <div class="bouton">
+                <p>Réservez maintenant</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-2">Logo</div>
-        <div class="col-8">Navigation</div>
-        <div class="col-2">Proifle et reseaux</div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-12">banniere</div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-4">breadcrumbs</div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-4">Vin 1</div>
-        <div class="col-7 offset-1">Vin 2</div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-10 offset-1">Visite card 1</div>
-        <div class="col-7 offset-1">Visite card 2</div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-12">ornament</div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-2">footer premier</div>
-        <div class="col-2 offset-3">footer deuxième</div>
-        <div class="col-2 offset-1">footer troisieme</div>
-        <div class="row">
-          <div class="col-4">footer quatrième</div>
-          <div class="col-3 offset-5">footer cinque</div>
-        </div>
-      </div>
-    </div>
-
-    <script src="js/main.js" type="module"></script>
-  </body>
-</html>
+  </block>
+</extends>
