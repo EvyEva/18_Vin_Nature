@@ -225,3 +225,162 @@ body {
 .visite-marbre {
   background-image: url(/src/images/fond\ marbre\ visite.png);
 }
+
+.footer {
+  background-color: #c7c7c7;
+  opacity: 0.9;
+}
+
+.footer-fond {
+  background-image: url(/src/images/marbre\ footer.png);
+}
+
+.logos-vin-footer {
+  margin-bottom: 16px;
+}
+
+.newsletter {
+  width: 313px;
+  height: 147px;
+  flex-shrink: 0;
+}
+
+.newsletter-titre-autour {
+  margin-bottom: 15px;
+}
+
+.newsletter-titel {
+  color: var(--Gris-fonc, #555);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.mail-bouton {
+  display: inline-flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7px;
+  background: var(--Gris-trs-clair, #f2f2f2);
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.mail {
+  color: var(--Gris-medium, #787878);
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.inscription-bouton {
+  display: inline-flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 69px;
+  background: var(--Blanc, #fff);
+  width: 100%;
+}
+
+.bouton-footer {
+  color: var(--Brun, #816752);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.reseaux-footer {
+  margin-top: 35px;
+  display: flex;
+  width: 97px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.suivre {
+  align-self: stretch;
+  color: #555;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.logos-footer {
+  display: flex;
+  height: 33px;
+  align-items: center;
+  gap: 15px;
+  align-self: stretch;
+}
+
+.vente-titre {
+  color: #555;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.footer-description {
+  color: #787878;
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 16px;
+}
+
+.telephone {
+  color: #555;
+  font-size: 14px;
+  font-weight: 200;
+  display: inline-flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7px;
+  opacity: 0.5;
+  background: var(--Gris-trs-clair, #f2f2f2);
+  width: 165px;
+}
+
+.adresse-titre {
+  color: #555;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.localiser {
+  color: #787878;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+}
+
+.langues-footer {
+  color: #787878;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.footer-droits {
+  display: flex;
+  width: 1115px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  color: #787878;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  flex: 1 0 0;
+  margin-top: 70px;
+}
+
+.droits {
+  border-bottom: 1px solid #cdcdcd;
+}
