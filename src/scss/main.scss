@@ -53,8 +53,11 @@ body {
 }
 
 .card {
-  background-color: aqua;
+  background-image: url(../images/fond\ marbre.png);
+  position: relative;
 }
+
+/* Header */
 
 .header {
   height: 171px;
@@ -190,6 +193,8 @@ body {
   justify-content: center;
 }
 
+/* Visite de cave  */
+
 .contenu-cave-vin {
   display: flex;
   width: 736px;
@@ -226,6 +231,8 @@ body {
   background-image: url(/src/images/fond\ marbre\ visite.png);
 }
 
+/* Footer */
+
 .footer {
   background-color: #c7c7c7;
   opacity: 0.9;
@@ -250,7 +257,7 @@ body {
 }
 
 .newsletter-titel {
-  color: var(--Gris-fonc, #555);
+  color: #555;
   font-size: 16px;
   font-weight: 300;
 }
@@ -261,13 +268,13 @@ body {
   align-items: center;
   gap: 10px;
   border-radius: 7px;
-  background: var(--Gris-trs-clair, #f2f2f2);
+  background: #f2f2f2;
   width: 100%;
   margin-bottom: 15px;
 }
 
 .mail {
-  color: var(--Gris-medium, #787878);
+  color: #787878;
   font-size: 14px;
   font-weight: 200;
 }
@@ -279,12 +286,12 @@ body {
   align-items: center;
   gap: 10px;
   border-radius: 69px;
-  background: var(--Blanc, #fff);
+  background: #fff;
   width: 100%;
 }
 
 .bouton-footer {
-  color: var(--Brun, #816752);
+  color: #816752;
   font-size: 16px;
   font-weight: 400;
 }
@@ -338,7 +345,7 @@ body {
   gap: 10px;
   border-radius: 7px;
   opacity: 0.5;
-  background: var(--Gris-trs-clair, #f2f2f2);
+  background: #f2f2f2;
   width: 165px;
 }
 
@@ -383,4 +390,225 @@ body {
 
 .droits {
   border-bottom: 1px solid #cdcdcd;
+}
+
+/* Cards */
+
+.card-un-trois {
+  display: flex;
+  width: 641px;
+  align-items: flex-end;
+  align-content: flex-end;
+  gap: 20px 31px;
+  flex-wrap: wrap;
+}
+
+.card-deux {
+  display: flex;
+  width: 648.83px;
+  align-items: flex-end;
+  align-content: flex-end;
+  gap: 20px 31px;
+  flex-wrap: wrap;
+}
+
+.card-vin-fond {
+  background-image: url(/src/images/fond\ marbre\ visite.png);
+}
+
+.titre-card {
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--ligne-fine, rgba(187, 187, 187, 0.5));
+  margin-bottom: 30px;
+}
+
+.titre {
+  color: #555;
+  font-size: 40px;
+  font-weight: 200;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+
+.texte-contenu {
+  color: #787878;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.description-contenue-card {
+  margin-bottom: 30px;
+}
+
+.texte-bouton {
+  color: #4f3a29;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.deux-bouton {
+  display: flex;
+
+  align-items: center;
+  gap: 31px;
+}
+
+.bouton-info {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: var(--gold, linear-gradient(90deg, #f9e5c7 0%, #f6d395 100%));
+}
+
+.texte-bouton {
+  color: #816752;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.nouveau {
+  display: flex;
+  width: 178px;
+  height: 38px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 35px 0px;
+  opacity: 0.5;
+  background: #816752;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nouveau-titre {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.tout-nos-vins {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--ligne-fine, rgba(187, 187, 187, 0.5));
+}
+
+.touts-vins {
+  color: #555;
+  font-weight: 400;
+}
+
+/* Vin Blanc */
+
+.vin-fond {
+  background-image: url(/src/images/fond\ marbre\ details.png);
+}
+
+.breadcrumbs {
+  display: flex;
+  height: 56px;
+  padding: 0px 15px;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  background: #f2f2f2;
+}
+
+.breadcrums-content {
+  color: #555;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.topline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topline-texte {
+  color: #555;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.titre-details {
+  color: #555;
+  font-size: 40px;
+  font-weight: 200;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  width: 546px;
+}
+
+.vin-details-titre-bio {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.traits {
+  width: 641px;
+  height: 2px;
+  background: rgba(187, 187, 187, 0.5);
+}
+
+.prix-commander {
+  display: inline-flex;
+  padding-right: 190px;
+  align-items: flex-start;
+  gap: 183px;
+}
+
+.prix {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #f2f2f2;
+  color: #555;
+  font-size: 16px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.vin-details-titre {
+  color: #a8a8a8;
+  font-size: 16px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.vin-details-reponse {
+  color: #787878;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.bouton-vin-detail {
+  display: flex;
+  width: 166px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: var(--gold, linear-gradient(90deg, #f9e5c7 0%, #f6d395 100%));
+  color: #816752;
+  font-size: 15px;
+  font-weight: 100;
 }
