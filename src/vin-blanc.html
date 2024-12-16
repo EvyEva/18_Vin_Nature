@@ -2,14 +2,18 @@
   <block name="content">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <img
-            src="images/Bannière vin blanc.png"
-            alt="bannière bouteille de vin"
-          />
+        <div class="banniere-vins">
+          <div class="col-12">
+            <img
+              src="images/Bannière vin blanc.png"
+              alt="bannière bouteille de vin"
+            />
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="espacement-vins"></div>
 
     <div class="container">
       <div class="row">
@@ -27,8 +31,11 @@
       </div>
     </div>
 
+    <div class="espacement-vins"></div>
+
     <div class="container">
       <div class="vin-fond">
+        <div class="petit-espacement"></div>
         <div class="row">
           <div class="col-4">
             <img src="images/vin-blanc.png" alt=" Bouteil de Gewürztraminer" />
@@ -50,39 +57,100 @@
               </div>
               <div class="traits"></div>
 
-              <div class="row">
-                <div class="col-3">
-                  <p class="prix">60.20 CHF</p>
-                </div>
-                <div class="col-7 offset-2">
-                  <div class="bouton-vin-detail">Commander en ligne</div>
+              <div class="prix-bouton">
+                <div class="row">
+                  <div class="col-3">
+                    <p class="prix">60.20 CHF</p>
+                  </div>
+                  <div class="col-7 offset-2">
+                    <div class="bouton-vin-detail">Commander en ligne</div>
+                  </div>
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-3">
-                  <p class="vin-details-titre">Cépage(s)</p>
+              <div class="vin-blanc-colonnes">
+                <div class="row">
+                  <div class="col-3">
+                    <p class="vin-details-titre">Cépage(s)</p>
+                  </div>
+                  <div class="col-7 offset-2">
+                    <p class="vin-details-reponse">100% Chardonnay</p>
+                  </div>
                 </div>
-                <div class="col-7 offset-2">
-                  <p class="vin-details-reponse">100% Chardonnay</p>
+
+                <div class="row">
+                  <div class="col-3">
+                    <p class="vin-details-titre">Milésime actuel</p>
+                  </div>
+                  <div class="col-7 offset-2">
+                    <p class="vin-details-reponse">2022</p>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-3">
-                  <p class="vin-details-titre">Milésime actuel</p>
+                <div class="row">
+                  <div class="col-3">
+                    <p class="vin-details-titre">Provenance</p>
+                  </div>
+                  <div class="col-7 offset-2">
+                    <p class="vin-details-reponse">
+                      Séléction des Côteau de Sierre
+                    </p>
+                  </div>
                 </div>
-                <div class="col-7 offset-2">
-                  <p class="vin-details-reponse">2022</p>
+
+                <div class="row">
+                  <div class="col-3">
+                    <p class="vin-details-titre">Vinification</p>
+                  </div>
+                  <div class="col-7 offset-2">
+                    <p class="vin-details-reponse">
+                      Fermentations et élevages de 18 mois en barriques pour
+                      chacun des cépages avant assemblage en cuve inox.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-3">
-                  <p class="vin-details-titre">Provenance</p>
+
+                <div class="row">
+                  <div class="col-3">
+                    <p class="vin-details-titre">Notes de Dégustation</p>
+                  </div>
+                  <div class="col-7 offset-2">
+                    <p class="vin-details-reponse">
+                      L’éclat de Lune s’ouvre sur des arômes délicats de fleurs
+                      blanches et de pêche juteuse, accompagnés de nuance
+                      subtiles de noisette grillé. en bouche, ce vin se révèle
+                      d’une grande élégance, avec une acidité vive qui équilibre
+                      parfaitement la richesse des fruits mûrs. Les notes de
+                      vanille et de zeste de citron persistent en finale,
+                      offrant une belle longueur et une complexité saisissante.
+                    </p>
+                  </div>
                 </div>
-                <div class="col-7 offset-2">
-                  <p class="vin-details-reponse">
-                    Séléction des Côteau de Sierre
-                  </p>
+
+                <div class="row">
+                  <div class="col-3">
+                    <p class="vin-details-titre">Accords Mets et Vins</p>
+                  </div>
+                  <div class="col-7 offset-2">
+                    <p class="vin-details-reponse">Fromage, viandes blanches</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <p class="vin-details-titre">Température de service</p>
+                  </div>
+                  <div class="col-7 offset-2">
+                    <p class="vin-details-reponse">Entre 15°C et 18°C</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <p class="vin-details-titre">Potentiel de Garde</p>
+                  </div>
+                  <div class="col-7 offset-2">
+                    <p class="vin-details-reponse">En cave</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -92,19 +160,21 @@
 
       <div class="container">
         <div class="row">
-          <div class="visite-marbre">
-            <div class="col-10 offset-1">
-              <img src="images/cave a vin .png" alt="Cave a vin" />
-            </div>
-            <div class="col-7 offset-1">
-              <div class="contenu-cave-vin">
-                <div class="texte-cave-vin">
-                  Vous voulez gôuter nos vins? Organisez une visite de cave ou
-                  une dégustation, en entreprise, en association, ou en
-                  individuel : tout le monde est le bienvenu !
-                </div>
-                <div class="bouton">
-                  <p>Réservez maintenant</p>
+          <div class="visite-cave-vin">
+            <div class="visite-marbre">
+              <div class="col-10 offset-1">
+                <img src="images/cave a vin .png" alt="Cave a vin" />
+              </div>
+              <div class="col-7 offset-1">
+                <div class="contenu-cave-vin">
+                  <div class="texte-cave-vin">
+                    Vous voulez gôuter nos vins? Organisez une visite de cave ou
+                    une dégustation, en entreprise, en association, ou en
+                    individuel : tout le monde est le bienvenu !
+                  </div>
+                  <div class="bouton">
+                    <p>Réservez maintenant</p>
+                  </div>
                 </div>
               </div>
             </div>
