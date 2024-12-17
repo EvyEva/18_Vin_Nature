@@ -314,8 +314,15 @@ a {
   align-items: center;
   gap: 10px;
   border-radius: 69px;
-  background: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(249, 229, 199, 1) 50%,
+    rgba(246, 211, 149, 1) 100%
+  );
   width: 100%;
+  background-size: 200%;
   transition: background 0.5s ease-in-out;
 }
 
@@ -326,7 +333,7 @@ a {
 }
 
 .inscription-bouton:hover {
-  background: var(--gold, linear-gradient(90deg, #f9e5c7 0%, #f6d395 100%));
+  background-position: 100%;
 }
 
 .reseaux-footer {
