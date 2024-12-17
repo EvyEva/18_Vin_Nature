@@ -703,10 +703,19 @@ a {
   align-items: center;
   gap: 10px;
   border-radius: 30px;
-  background: var(--gold, linear-gradient(90deg, #f9e5c7 0%, #f6d395 100%));
+  background: var(
+    --gold,
+    linear-gradient(90deg, #f9e5c7 0%, #f6d395 50%, #c59d62 100%)
+  );
+  background-size: 200%;
+  transition: background 0.5s ease-in-out;
   color: #816752;
   font-size: 15px;
   font-weight: 100;
+}
+
+.bouton-vin-detail:hover {
+  background-position: 100%;
 }
 
 .vin-blanc-colonnes {
