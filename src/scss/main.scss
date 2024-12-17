@@ -26,30 +26,34 @@ body {
   margin-top: 16px;
 }
 
-.col-2 {
-  background-color: pink;
-}
-.col-7 {
-  background-color: pink;
-}
+// .col-2 {
+//   background-color: pink;
+// }
+// .col-7 {
+//   background-color: pink;
+// }
 
-.col-12 {
-  background-color: pink;
-}
-.col-10 {
-  background-color: pink;
-}
+// .col-12 {
+//   background-color: pink;
+// }
+// .col-10 {
+//   background-color: pink;
+// }
 
-.col-3 {
-  background-color: pink;
-}
+// .col-3 {
+//   background-color: pink;
+// }
 
-.col-4 {
-  background-color: pink;
-}
+// .col-4 {
+//   background-color: pink;
+// }
 
-.col-8 {
-  background-color: pink;
+// .col-8 {
+//   background-color: pink;
+// }
+
+a {
+  text-decoration: none;
 }
 
 .card {
@@ -199,6 +203,37 @@ body {
 
 /* Visite de cave  */
 
+.bouton-cave {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: var(
+    --gold,
+    linear-gradient(90deg, #f9e5c7 0%, #f6d395 50%, #c59d62 100%)
+  );
+  background-size: 200%;
+  transition: background 0.5s ease-in-out;
+}
+
+.bouton-cave:hover {
+  background-position: 100%;
+}
+
+.bouton-cave {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  color: #816752;
+  font-size: 15px;
+  font-weight: 100;
+}
+
 .contenu-cave-vin {
   display: flex;
   width: 736px;
@@ -216,19 +251,7 @@ body {
   color: var(--Gris-medium, #787878);
   font-size: 20px;
   font-weight: 200;
-}
-
-.bouton {
-  display: flex;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 30px;
-  background: var(--gold, linear-gradient(90deg, #f9e5c7 0%, #f6d395 100%));
-  color: var(--Brun, #816752);
-  font-size: 15px;
-  font-weight: 100;
+  margin-top: 25px;
 }
 
 .visite-marbre {
@@ -293,12 +316,17 @@ body {
   border-radius: 69px;
   background: #fff;
   width: 100%;
+  transition: background 0.5s ease-in-out;
 }
 
 .bouton-footer {
   color: #816752;
   font-size: 16px;
   font-weight: 400;
+}
+
+.inscription-bouton:hover {
+  background: var(--gold, linear-gradient(90deg, #f9e5c7 0%, #f6d395 100%));
 }
 
 .reseaux-footer {
@@ -380,7 +408,6 @@ body {
 
 .footer-droits {
   display: flex;
-  width: 1115px;
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
@@ -389,17 +416,37 @@ body {
   font-weight: 200;
   flex: 1 0 0;
   margin-top: 70px;
-  padding-bottom: 40px;
 }
 
 .droits {
   border-bottom: 1px solid #cdcdcd;
 }
 
+.footer-cinque {
+  margin-top: -125px;
+  margin-right: -60px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
 /* Cards */
+
+.cave-vin-image {
+  margin-top: -60px;
+}
+
+.image-depasse {
+  margin-top: -100px;
+  margin-bottom: -100px;
+}
 
 .espacement-card {
   padding-top: 221px;
+}
+
+.espacement-card-cave {
+  padding-top: 308px;
 }
 
 .card-un-trois {
@@ -453,12 +500,6 @@ body {
   margin-bottom: 30px;
 }
 
-.texte-bouton {
-  color: #4f3a29;
-  font-size: 16px;
-  font-weight: 100;
-}
-
 .deux-bouton {
   display: flex;
   align-items: center;
@@ -466,31 +507,28 @@ body {
 }
 
 .bouton-info {
+  font-size: 15px;
+  font-weight: 100;
   display: flex;
   padding: 10px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 30px;
-  background: var(--gold, linear-gradient(90deg, #f9e5c7 0%, #f6d395 100%));
+  background: var(
+    --gold,
+    linear-gradient(90deg, #f9e5c7 0%, #f6d395 50%, #c59d62 100%)
+  );
+  background-size: 200%;
+  transition: background 0.5s ease-in-out;
 }
 
 .bouton-info:hover {
-  background: var(
-    --gold-hover,
-    linear-gradient(90deg, #f6d395 0%, #c59d62 100%)
-  );
-  transition: background 0.5s;
+  background-position: 100%;
 }
 
 .texte-bouton {
   color: #816752;
-  font-size: 15px;
-  font-weight: 100;
-}
-
-.texte-bouton {
-  color: var(--brun-fonc, #4f3a29);
 }
 
 .nouveau {
@@ -530,7 +568,7 @@ body {
   font-weight: 400;
 }
 
-/* Vin Blanc */
+/* Vin Details */
 
 .banniere-vins {
   padding-top: 64px;
@@ -561,6 +599,13 @@ body {
 }
 
 .breadcrums-content {
+  color: #555;
+  font-size: 20px;
+  font-weight: 200;
+  border-bottom: 1px solid var(--ligne-fine, rgba(187, 187, 187, 0.5));
+}
+
+.breadcrums-content-sans-trait {
   color: #555;
   font-size: 20px;
   font-weight: 200;
@@ -598,7 +643,7 @@ body {
 }
 
 .traits {
-  width: 641px;
+  width: 631px;
   height: 2px;
   background: rgba(187, 187, 187, 0.5);
 }
@@ -676,4 +721,13 @@ body {
 
 .visite-marbre {
   padding-bottom: 76px;
+  padding-top: 1px;
+}
+
+.bouteille-image {
+  margin-left: 10px;
+}
+
+.vin-blanc-details {
+  margin-right: 10px;
 }
